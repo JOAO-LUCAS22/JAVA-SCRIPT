@@ -1,3 +1,5 @@
+//switch-case
+
 let opcao = 3
 
 switch (opcao) {
