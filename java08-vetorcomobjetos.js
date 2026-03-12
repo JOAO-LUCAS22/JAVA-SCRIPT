@@ -46,10 +46,14 @@ console.log("\nFiltrando de nome, mostre apenas os nomes")
 const nome =  listadenomes.map(u => u.nome)
 nome.forEach(nome => console.log(`Nome: ${nome}`))
 
-console.log("\nFiltrando usuários, mostre apenas o usuario desejado")
+console.log("\nFiltrando usuários, mostre apenas o usuario desejado pelo nome.")
 const usuarioencontrado = listadeusuarios.find(u => u.nome === "Bruna")
 console.log(`Nome: ${usuarioencontrado.nome} \nIdade: ${usuarioencontrado.idade}`)
 
-console.log("\nFiltrando usuários, mostre apenas o usuario desejado")
+console.log("\nFiltrando usuários, mostre apenas o usuario desejado pela idade.")
 const usuarioidade = listadeusuarios.find(i => i.idade === 45)
 console.log(`Nome: ${usuarioidade.nome} \nIdade: ${usuarioidade.idade}`)
+
+console.log("\nSomando as idades dos usuários.")
+const somaidade = listadeusuarios.reduce((total, u) => total + u.idade, 0)
+console.log(somaidade)
