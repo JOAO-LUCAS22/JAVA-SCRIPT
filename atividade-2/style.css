@@ -1,0 +1,117 @@
+/* Importando uma fonte estilo Pixel Art do Google */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mario-red: #e52521;
+    --mario-blue: #049cd8;
+    --mario-yellow: #fbd000;
+    --mario-green: #43b047;
+    --sky-blue: #5c94fc;
+    --brick-brown: #ab4700;
+}
+
+body {
+    background-color: var(--sky-blue);
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border: 6px solid #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.3);
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Estilo para a Logo/Imagem */
+img {
+    width: 80px;
+    margin-bottom: 20px;
+    image-rendering: pixelated; /* Mantém o aspecto de pixel */
+}
+
+h1 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--mario-yellow);
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-family: 'Press Start 2P', cursive;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 4px solid var(--brick-brown);
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--mario-green);
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--mario-red);
+    color: white;
+    border: 4px solid #fff;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.1s, background-color 0.2s;
+    box-shadow: 0 6px 0 #8a1512;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--mario-green);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #8a1512;
+}
+
+#ResultadosGerados {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #fff;
+    color: #000;
+    text-shadow: none;
+    border: 4px solid var(--mario-yellow);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+#ResultadosGerados h2 {
+    font-size: 14px;
+    color: var(--mario-blue);
+    text-align: center;
+}
