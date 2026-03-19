@@ -1,0 +1,112 @@
+/* Importando uma fonte estilo Pixel Art do Google */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importando a fonte clássica de videogame */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --mario-red: #e52521;
+  --mario-blue: #049cd8;
+  --mario-yellow: #fbd000;
+  --mario-green: #43b047;
+  --sky-blue: #5c94fc; /* Cor do fundo clássico */
+  --brick-brown: #944828;
+}
+
+body {
+  background-color: var(--sky-blue);
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro estilo caixa de diálogo */
+  padding: 40px;
+  border: 6px solid #fff;
+  border-radius: 4px; /* Mario é mais "quadradão" */
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 16px;
+  color: var(--mario-yellow);
+  margin-bottom: 30px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input {
+  font-family: 'Press Start 2P', cursive;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 4px solid var(--brick-brown);
+  background-color: #fff;
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--mario-green);
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--mario-red);
+  color: white;
+  border: 4px solid #fff;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 6px 0 #8a1512;
+  margin-top: 10px;
+  transition: all 0.1s;
+}
+
+button:hover {
+  background-color: var(--mario-green);
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #8a1512;
+}
+
+#ResultadosGerados {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fff;
+  color: #000;
+  border: 4px solid var(--mario-yellow);
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+/* Estilizando a imagem (logo) que você deve mover para o body */
+img {
+  width: 100px;
+  margin-bottom: 20px;
+  image-rendering: pixelated; /* Deixa a imagem com aspecto de pixel */
+}
