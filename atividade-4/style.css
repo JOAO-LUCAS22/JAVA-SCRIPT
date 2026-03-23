@@ -106,7 +106,7 @@ button:active {
 
 /* Estilizando a imagem (logo) que você deve mover para o body */
 img {
-  width: 250px;
+  width: 100px;
   margin-bottom: 20px;
   image-rendering: pixelated; /* Deixa a imagem com aspecto de pixel */
 }
